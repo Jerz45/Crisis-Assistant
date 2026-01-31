@@ -1,0 +1,12 @@
+{
+  "0": "affirm",
+  "1": "ask_instructions",
+  "2": "ask_nearest_hospital",
+  "3": "deny",
+  "4": "greet",
+  "5": "out_of_scope",
+  "6": "provide_location",
+  "7": "provide_severity",
+  "8": "provide_water_level",
+  "9": "report_flood"
+}

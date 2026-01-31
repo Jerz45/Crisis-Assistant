@@ -1,0 +1,23 @@
+{
+  "ask_evacuation": [
+    "Follow official flood warnings from German authorities such as BBK (Federal Office of Civil Protection) or your local municipality.",
+    "Move immediately to higher ground if water levels are rising. Never wait until roads become blocked.",
+    "Do NOT drive through flooded streets. Even 30 cm of moving water can sweep away vehicles.",
+    "Take emergency essentials: ID documents, medication, phone chargers, drinking water, and warm clothing.",
+    "If evacuating in Germany, shelters are often set up in sports halls (Turnhallen), schools, or community centers."
+  ],
+
+  "ask_first_aid": [
+    "If someone is injured during flooding: move them away from water hazards first.",
+    "For severe bleeding: apply firm direct pressure with a clean cloth. Call emergency services immediately.",
+    "If hypothermia is suspected (cold, shaking, confusion): wrap the person in dry blankets and seek urgent medical help.",
+    "Avoid contact with floodwater if possible—it may contain sewage or chemicals."
+  ],
+
+  "ask_shelter": [
+    "If your home is unsafe due to flooding, go to a designated evacuation shelter (Notunterkunft) announced by local authorities.",
+    "In Germany, temporary shelters are commonly located in city halls, sports halls, and Red Cross support centers.",
+    "Bring essential items, but avoid carrying heavy luggage.",
+    "If you have children, elderly people, or pets, inform shelter staff immediately so proper care can be arranged."
+  ]
+}

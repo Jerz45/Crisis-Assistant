@@ -1,0 +1,16 @@
+{
+  "deggendorf": "Deggendorf",
+  "berlin": "Berlin",
+  "94469": "94469",
+  "bahnhofstraße 1, deggendorf": "Bahnhofstraße 1, Deggendorf",
+  "axis-000123": "AXIS-000123",
+  "axis-000124": "AXIS-000124",
+  "flood": "flood",
+  "wildfire": "wildfire",
+  "earthquake": "earthquake",
+  "none": "none",
+  "minor": "minor",
+  "serious": "serious",
+  "true": "true",
+  "false": "false"
+}

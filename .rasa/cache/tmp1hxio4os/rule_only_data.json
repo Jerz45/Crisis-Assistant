@@ -1,0 +1,8 @@
+{
+  "rule_only_slots": [
+    "trapped",
+    "injuries",
+    "severity"
+  ],
+  "rule_only_loops": []
+}

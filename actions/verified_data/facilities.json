@@ -1,0 +1,69 @@
+[
+  {
+    "city": "Deggendorf",
+    "type": "hospital",
+    "name": "Donau-Isar Klinikum Deggendorf",
+    "address": "Perlasberger Str. 41, 94469 Deggendorf"
+  },
+  {
+    "city": "Deggendorf",
+    "type": "shelter",
+    "name": "Deggendorf Flood Shelter (Community Center)",
+    "address": "Stadtplatz 1, 94469 Deggendorf"
+  },
+  {
+    "city": "Passau",
+    "type": "hospital",
+    "name": "Klinikum Passau",
+    "address": "Innstraße 76, 94032 Passau"
+  },
+  {
+    "city": "Passau",
+    "type": "shelter",
+    "name": "Flood Shelter Passau (Community Center)",
+    "address": "Rathausplatz 1, 94032 Passau"
+  },
+  {
+    "city": "Munich",
+    "type": "hospital",
+    "name": "LMU Klinikum München",
+    "address": "Marchioninistr. 15, 81377 München"
+  },
+  {
+    "city": "Munich",
+    "type": "shelter",
+    "name": "Munich Emergency Shelter (Flood Response)",
+    "address": "Messe München Shelter Point, 81829 München"
+  },
+   {
+    "city": "Berlin",
+    "type": "shelter",
+    "name": "Emergency Shelter Berlin (City Crisis Center)",
+    "address": "Berlin Central Shelter, Alexanderplatz, Berlin"
+  },
+  {
+    "city": "Hamburg",
+    "type": "hospital",
+    "name": "Universitätsklinikum Hamburg-Eppendorf (UKE)",
+    "address": "Martinistraße 52, 20246 Hamburg"
+  },
+
+  {
+    "city": "Hamburg",
+    "type": "shelter",
+    "name": "Hamburg Flood Shelter (Community Center)",
+    "address": "Rathausmarkt 1, 20095 Hamburg"
+  },
+  {
+    "city": "Cologne",
+    "type": "hospital",
+    "name": "Uniklinik Köln",
+    "address": "Kerpener Str. 62, 50937 Köln"
+  },
+  {
+    "city": "Cologne",
+    "type": "shelter",
+    "name": "Cologne Emergency Shelter (Flood Response)",
+    "address": "Neumarkt 1, 50667 Köln"
+  }
+]

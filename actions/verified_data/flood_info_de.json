@@ -1,0 +1,60 @@
+{
+  "precautions": [
+    "Avoid fast-moving water and flooded basements.",
+    "Switch off electricity if water is entering the building (only if safe).",
+    "Keep phone charged and follow official alerts (NINA / Katwarn).",
+    "Move valuables and documents to higher floors."
+  ],
+  "trapped": [
+    "Move to higher floors; avoid basements.",
+    "Call 112 if you cannot evacuate safely.",
+    "Signal for help (flashlight, phone light) and stay together.",
+    "Do not enter floodwater unless absolutely necessary."
+  ],
+  "injuries_yes": [
+    "Call 112 for severe bleeding, unconsciousness, or breathing problems.",
+    "Apply pressure to bleeding wounds using a clean cloth.",
+    "Keep the injured person warm and calm.",
+    "Avoid moving someone with suspected spinal injuries unless necessary."
+  ],
+  "injuries_no": [
+    "Monitor for shock (cold skin, dizziness).",
+    "Keep everyone hydrated and warm.",
+    "Prepare to evacuate if the situation worsens."
+  ],
+  "severity": {
+    "low": [
+      "Stay alert and monitor updates for your area.",
+      "Avoid driving through flooded roads.",
+      "Prepare essentials in case conditions worsen."
+    ],
+    "medium": [
+      "Consider moving to higher ground if water is rising.",
+      "Prepare to evacuate; pack medication and documents.",
+      "Avoid underground areas and basements."
+    ],
+    "high": [
+      "Evacuate if authorities advise it or water is rising quickly.",
+      "Call 112 if anyone is trapped or in danger.",
+      "Do not drive; use safe routes to higher ground."
+    ]
+  },
+  "water_level_advice": {
+    "ankle": [
+      "Keep children away from water and check drains.",
+      "Wear waterproof boots and avoid open manholes."
+    ],
+    "knee": [
+      "Do not drive through flooded roads.",
+      "Move to higher floors and prepare to evacuate."
+    ],
+    "waist": [
+      "Evacuate to higher ground immediately if safe.",
+      "Call 112 if evacuation is unsafe or someone is trapped."
+    ],
+    "above": [
+      "Life-threatening risk: move to the highest safe point and call 112.",
+      "Do not enter water—there may be strong currents and debris."
+    ]
+  }
+}

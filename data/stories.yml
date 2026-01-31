@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+- story: flood report triggers form
+  steps:
+    - intent: report_flood
+    - action: flood_assessment_form
+    - active_loop: flood_assessment_form
+
+- story: greet
+  steps:
+    - intent: greet
+    - action: utter_greet

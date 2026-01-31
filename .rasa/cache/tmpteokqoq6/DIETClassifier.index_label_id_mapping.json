@@ -1,0 +1,13 @@
+{
+  "0": "ask_instructions",
+  "1": "ask_nearest_hospital",
+  "2": "greet",
+  "3": "injuries_no",
+  "4": "injuries_yes",
+  "5": "provide_location",
+  "6": "provide_severity",
+  "7": "provide_water_level",
+  "8": "report_flood",
+  "9": "trapped_no",
+  "10": "trapped_yes"
+}

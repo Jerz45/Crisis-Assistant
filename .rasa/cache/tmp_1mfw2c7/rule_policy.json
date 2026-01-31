@@ -1,0 +1,71 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_evacuation\"}}]": "action_get_guidance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_evacuation\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_evacuation\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}]": "action_risk_assessment",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_risk_assessment\"}}]": "utter_show_quick_options",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_risk_assessment\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_show_quick_options\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"report_emergency\"}}]": "utter_emergency_number",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"report_emergency\"}}, {\"prev_action\": {\"action_name\": \"utter_emergency_number\"}, \"user\": {\"intent\": \"report_emergency\"}}]": "crisis_intake_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"report_emergency\"}}, {\"prev_action\": {\"action_name\": \"utter_emergency_number\"}, \"user\": {\"intent\": \"report_emergency\"}}, {\"active_loop\": {\"name\": \"crisis_intake_form\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}, \"user\": {\"intent\": \"report_emergency\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}]": "action_check_ticket_status",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}, {\"prev_action\": {\"action_name\": \"action_check_ticket_status\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_nearby_facilities\"}}]": "action_find_nearby_facilities",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_nearby_facilities\"}}, {\"prev_action\": {\"action_name\": \"action_find_nearby_facilities\"}, \"user\": {\"intent\": \"ask_nearby_facilities\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"create_ticket\"}}]": "action_create_ticket",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"create_ticket\"}}, {\"prev_action\": {\"action_name\": \"action_create_ticket\"}, \"user\": {\"intent\": \"create_ticket\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_shelter\"}}]": "action_get_guidance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_shelter\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_shelter\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "utter_out_of_scope",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_human\"}}]": "action_human_handover",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_human\"}}, {\"prev_action\": {\"action_name\": \"action_human_handover\"}, \"user\": {\"intent\": \"request_human\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"unclear_input\"}}]": "utter_unclear",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"unclear_input\"}}, {\"prev_action\": {\"action_name\": \"utter_unclear\"}, \"user\": {\"intent\": \"unclear_input\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_first_aid\"}}]": "action_get_guidance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_first_aid\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_first_aid\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}]": "utter_ticket_ask_id",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}, {\"prev_action\": {\"action_name\": \"utter_ticket_ask_id\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}]": "action_listen"
+    },
+    "rule_only_slots": [
+      "ticket_id"
+    ],
+    "rule_only_loops": [
+      "crisis_intake_form"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"utter_emergency_number\"}}, {\"active_loop\": {\"name\": \"crisis_intake_form\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}, \"user\": {\"intent\": \"report_emergency\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "handling active loops and forms - crisis_intake_form - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"unclear_input\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_shelter\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_shelter\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"create_ticket\"}}, {\"prev_action\": {\"action_name\": \"action_create_ticket\"}, \"user\": {\"intent\": \"create_ticket\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"create_ticket\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_evacuation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_first_aid\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_first_aid\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}, {\"prev_action\": {\"action_name\": \"utter_ticket_ask_id\"}, \"slots\": {\"ticket_id\": \"should_not_be_set\"}, \"user\": {\"intent\": \"check_ticket_status\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_risk_assessment\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_human\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"report_emergency\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}, {\"prev_action\": {\"action_name\": \"action_check_ticket_status\"}, \"slots\": {\"ticket_id\": [1.0]}, \"user\": {\"intent\": \"check_ticket_status\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"request_human\"}}, {\"prev_action\": {\"action_name\": \"action_human_handover\"}, \"user\": {\"intent\": \"request_human\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"crisis_intake_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_risk_assessment\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_show_quick_options\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"unclear_input\"}}, {\"prev_action\": {\"action_name\": \"utter_unclear\"}, \"user\": {\"intent\": \"unclear_input\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"report_emergency\"}}, {\"prev_action\": {\"action_name\": \"utter_emergency_number\"}, \"user\": {\"intent\": \"report_emergency\"}}]",
+      "handling active loops and forms - crisis_intake_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_first_aid\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_evacuation\"}}, {\"prev_action\": {\"action_name\": \"action_get_guidance\"}, \"user\": {\"intent\": \"ask_evacuation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_shelter\"}}]"
+    ]
+  }
+}

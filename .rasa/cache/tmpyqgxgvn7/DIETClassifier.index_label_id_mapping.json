@@ -1,0 +1,18 @@
+{
+  "0": "affirm",
+  "1": "ask_evacuation",
+  "2": "ask_first_aid",
+  "3": "ask_nearby_facilities",
+  "4": "ask_shelter",
+  "5": "check_ticket_status",
+  "6": "create_ticket",
+  "7": "deny",
+  "8": "goodbye",
+  "9": "greet",
+  "10": "out_of_scope",
+  "11": "provide_location",
+  "12": "report_emergency",
+  "13": "request_human",
+  "14": "thankyou",
+  "15": "unclear_input"
+}

@@ -1,0 +1,74 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_instructions": 1,
+        "ask_nearest_hospital": 2,
+        "back": 3,
+        "deny": 4,
+        "greet": 5,
+        "nlu_fallback": 6,
+        "out_of_scope": 7,
+        "provide_location": 8,
+        "provide_severity": 9,
+        "provide_water_level": 10,
+        "report_flood": 11,
+        "restart": 12,
+        "session_start": 13
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_find_nearby_facilities": 13,
+        "action_flood_risk_assessment": 14,
+        "action_location_guidance": 15,
+        "action_human_handover": 16,
+        "action_fallback": 17,
+        "utter_ask_injuries": 18,
+        "utter_ask_location": 19,
+        "utter_ask_severity": 20,
+        "utter_ask_trapped": 21,
+        "utter_ask_water_level": 22,
+        "utter_fallback": 23,
+        "utter_greet": 24,
+        "utter_out_of_scope": 25,
+        "flood_assessment_form": 26
+      },
+      "entities": {
+        "location": 0,
+        "severity": 1,
+        "water_level": 2
+      },
+      "slots": {
+        "location_0": 0,
+        "severity_0": 1,
+        "injuries_0": 2,
+        "injuries_1": 3,
+        "trapped_0": 4,
+        "trapped_1": 5,
+        "water_level_0": 6,
+        "risk_level_0": 7
+      },
+      "active_loop": {
+        "flood_assessment_form": 0
+      }
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 10
+}

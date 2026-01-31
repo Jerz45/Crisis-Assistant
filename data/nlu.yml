@@ -1,0 +1,100 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - help
+    - emergency
+    - i need help
+
+- intent: report_flood
+  examples: |
+    - flood
+    - flooding
+    - my street is flooded
+    - the river is overflowing
+    - water is entering my house
+    - basement is full of water
+    - flash flood here
+    - flood near the Rhine
+
+- intent: provide_location
+  examples: |
+    - Berlin
+    - berlin
+    - Munich
+    - Hamburg
+    - Köln
+    - I am in Berlin
+    - I am in [Munich](location)
+    - [Hamburg](location)
+    - [Berlin](location)
+    - near [Erfurt](location)
+    - postcode [10243](location)
+    - 10243
+
+- intent: provide_severity
+  examples: |
+    - low
+    - medium
+    - high
+    - severity low
+    - severity medium
+    - severity high
+    - it is high risk
+    - flooding is low
+
+- intent: provide_water_level
+  examples: |
+    - ankle
+    - knee
+    - waist
+    - above
+    - water ankle
+    - water knee
+    - water waist
+    - water above
+
+- intent: ask_nearest_hospital
+  examples: |
+    - nearest hospital
+    - hospital near me
+    - where is the nearest hospital
+    - need a hospital
+    - emergency hospital
+
+
+- intent: ask_instructions
+  examples: |
+    - what should I do
+    - give me instructions
+    - how do I stay safe
+    - safety tips
+    - precautions
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - y
+    - correct
+    - injured yes
+    - trapped yes
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - n
+    - no injuries
+    - nobody is trapped
+    - trapped no
+
+- intent: out_of_scope
+  examples: |
+    - tell me a joke
+    - what is ai
+    - i want pizza

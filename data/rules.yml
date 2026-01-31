@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+- rule: Greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Ask instructions
+  steps:
+    - intent: ask_instructions
+    - action: action_location_guidance
+
+- rule: Nearest hospital anytime
+  steps:
+    - intent: ask_nearest_hospital
+    - action: action_find_nearby_facilities
+
+- rule: Fallback handler
+  steps:
+    - intent: nlu_fallback
+    - action: action_fallback

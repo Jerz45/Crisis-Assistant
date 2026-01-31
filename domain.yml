@@ -1,0 +1,139 @@
+version: "3.1"
+
+intents:
+  - greet
+  - report_flood
+  - provide_location
+  - provide_severity
+  - provide_water_level
+  - ask_nearest_hospital
+  - ask_instructions
+  - affirm
+  - deny
+  - out_of_scope
+  - nlu_fallback
+
+entities:
+  - location
+  - severity
+  - water_level
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+      - type: from_text
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: location
+
+  severity:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: severity
+      - type: from_text
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: severity
+
+  injuries:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: from_intent
+        intent: affirm
+        value: true
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: injuries
+      - type: from_intent
+        intent: deny
+        value: false
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: injuries
+
+  trapped:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: from_intent
+        intent: affirm
+        value: true
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: trapped
+      - type: from_intent
+        intent: deny
+        value: false
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: trapped
+
+  water_level:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: water_level
+      - type: from_text
+        conditions:
+          - active_loop: flood_assessment_form
+            requested_slot: water_level
+
+  risk_level:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+forms:
+  flood_assessment_form:
+    required_slots:
+      - location
+      - severity
+      - injuries
+      - trapped
+      - water_level
+
+responses:
+  utter_greet:
+    - text: "I am a flood crisis assistant for Germany. If life-threatening, call 112. Tell me: flooded street/house, your city, or type 'nearest hospital'."
+
+  utter_ask_location:
+    - text: "Where are you currently? (city/postcode/landmark)"
+
+  utter_ask_severity:
+    - text: "Flood severity? (low / medium / high)"
+
+  utter_ask_injuries:
+    - text: "Any injuries? (yes/no)"
+
+  utter_ask_trapped:
+    - text: "Is anyone trapped or cannot evacuate? (yes/no)"
+
+  utter_ask_water_level:
+    - text: "Water level? (ankle / knee / waist / above)"
+
+  utter_out_of_scope:
+    - text: "I can assist only with flood emergency guidance. If urgent call 112."
+
+  utter_fallback:
+    - text: "⚠️ I didn’t fully understand. Please rephrase it."
+
+actions:
+  - action_find_nearby_facilities
+  - action_flood_risk_assessment
+  - action_location_guidance
+  - action_human_handover
+  - action_fallback
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
